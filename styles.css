@@ -1,0 +1,498 @@
+/* MascotasTest - plantilla academica (HTML + CSS) */
+
+:root {
+  --azul: #1e5f8c;
+  --azul-oscuro: #143d5c;
+  --azul-claro: #2a7fbd;
+  --turquesa: #17a2a8;
+  --turquesa-claro: #e6f6f7;
+  --fondo: #f4f8fb;
+  --blanco: #ffffff;
+  --texto: #1b2a33;
+  --texto-suave: #5b7183;
+  --borde: #d8e4ee;
+  --sombra: 0 2px 8px rgba(20, 61, 92, 0.08);
+  --radio: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Encabezado y navegacion ---------- */
+
+header {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+header .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--turquesa);
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marca h1 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.marca span {
+  font-size: 12px;
+  color: #bcd7ea;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav a {
+  display: block;
+  color: #d6e6f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: var(--radio);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+nav a.activo {
+  background: var(--turquesa);
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+/* ---------- Estructura ---------- */
+
+main {
+  flex: 1;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.seccion {
+  padding: 30px 0;
+}
+
+.seccion h2 {
+  font-size: 22px;
+  color: var(--azul-oscuro);
+  border-left: 5px solid var(--turquesa);
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+
+.seccion h3 {
+  font-size: 16px;
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.centrado {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 22px;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.parrafo {
+  color: var(--texto-suave);
+  margin-bottom: 14px;
+}
+
+/* ---------- Portada ---------- */
+
+.portada {
+  background: linear-gradient(135deg, var(--azul) 0%, var(--azul-claro) 100%);
+  color: var(--blanco);
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.portada h2 {
+  border: none;
+  padding: 0;
+  color: var(--blanco);
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.portada p {
+  max-width: 640px;
+  margin: 0 auto 22px;
+  color: #e2eef6;
+}
+
+.portada .acciones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ---------- Listas ---------- */
+
+ul.lista {
+  list-style: none;
+}
+
+ul.lista li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+  color: var(--texto-suave);
+}
+
+ul.lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--turquesa);
+}
+
+ol.pasos {
+  padding-left: 20px;
+  color: var(--texto-suave);
+}
+
+ol.pasos li {
+  padding: 4px 0;
+}
+
+/* ---------- Etiquetas ---------- */
+
+.etiqueta {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--turquesa);
+  background: var(--turquesa-claro);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Botones ---------- */
+
+.boton {
+  display: inline-block;
+  background: var(--turquesa);
+  color: var(--blanco);
+  border: none;
+  border-radius: var(--radio);
+  padding: 11px 20px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #128d92;
+  text-decoration: none;
+}
+
+.boton.secundario {
+  background: var(--blanco);
+  color: var(--azul);
+  border: 1px solid var(--azul);
+}
+
+.boton.secundario:hover {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+.boton.bloque {
+  width: 100%;
+  text-align: center;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ---------- Formularios ---------- */
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--azul-oscuro);
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--texto);
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: var(--turquesa);
+  box-shadow: 0 0 0 3px rgba(23, 162, 168, 0.15);
+}
+
+.ayuda {
+  display: block;
+  font-size: 12px;
+  color: var(--texto-suave);
+  margin-top: 5px;
+}
+
+.enlace-centro {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+/* ---------- Aviso ---------- */
+
+.aviso {
+  background: var(--turquesa-claro);
+  border: 1px solid var(--turquesa);
+  border-left-width: 5px;
+  border-radius: var(--radio);
+  color: #0e5f63;
+  padding: 18px;
+  text-align: center;
+}
+
+.aviso strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.aviso.error {
+  background: #fdf0ee;
+  border-color: #d98880;
+  color: #9c2b22;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+/* ---------- Tarjetas de jornada ---------- */
+
+.jornada {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--azul);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 18px;
+}
+
+.jornada h3 {
+  margin-bottom: 4px;
+}
+
+.jornada .datos {
+  font-size: 14px;
+  color: var(--texto-suave);
+  margin-bottom: 12px;
+}
+
+.jornada .datos span {
+  display: block;
+}
+
+.seleccion {
+  border-top: 1px dashed var(--borde);
+  padding-top: 12px;
+}
+
+.seleccion .opcion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+.seleccion input {
+  accent-color: var(--turquesa);
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------- Tabla ---------- */
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+}
+
+.tabla th,
+.tabla td {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.tabla th {
+  background: var(--azul);
+  color: var(--blanco);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla tbody tr:nth-child(even) {
+  background: #fafcfe;
+}
+
+.vacio {
+  color: var(--texto-suave);
+  font-style: italic;
+  padding: 18px;
+  background: var(--blanco);
+  border: 1px dashed var(--borde);
+  border-radius: var(--radio);
+  text-align: center;
+}
+
+/* ---------- Datos de perfil ---------- */
+
+.datos-usuario {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--turquesa);
+  color: var(--blanco);
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.datos-usuario h2 {
+  border: none;
+  padding: 0;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.datos-usuario p {
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+/* ---------- Pie de pagina ---------- */
+
+footer {
+  background: var(--azul-oscuro);
+  color: #bcd7ea;
+  text-align: center;
+  font-size: 13px;
+  padding: 22px 20px;
+  margin-top: 30px;
+}
+
+footer strong {
+  color: var(--blanco);
+}
