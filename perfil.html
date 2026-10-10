@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil | MascotasTest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <div class="marca">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MascotasTest</h1>
+          <span>Alcaldia de la ciudad</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+
+      <div class="tarjeta">
+        <div class="datos-usuario">
+          <div class="avatar">SC</div>
+          <div>
+            <h2>Sandra Ramirez</h2>
+            <p>Ciudadana registrada</p>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom:14px;">Mis datos</h3>
+
+        <form action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="Sandra Ramirez" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" value="sandra@correo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="password">Nueva contrasena</label>
+            <input type="password" id="password" name="password" placeholder="Contrasena segura">
+            <span class="ayuda">Dejalo vacio si no quieres cambiar tu contrasena.</span>
+          </div>
+
+          <div class="acciones">
+            <button type="submit" class="boton">Guardar cambios</button>
+            <a class="boton secundario" href="servicios.html">Ver servicios</a>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <strong>MascotasTest</strong> - Proyecto academico SENA |
+      Aplicacion web HTML, CSS y PHP para XAMPP
+    </div>
+  </footer>
+
+</body>
+</html>

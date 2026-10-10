@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MascotasTest | Sistema de gestion de mascotas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <div class="marca">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MascotasTest</h1>
+          <span>Alcaldia de la ciudad</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="portada">
+      <h2>Gestion de jornadas para tus mascotas</h2>
+      <p>
+        La alcaldia ofrece servicios gratuitos a los ciudadanos que se inscriban para
+        jornadas de vacunacion y esterilizacion de sus mascotas. Las jornadas se habilitan
+        para inscripcion segun disponibilidad de la alcaldia.
+      </p>
+      <div class="acciones">
+        <a class="boton" href="registro.html">Crear cuenta</a>
+        <a class="boton secundario" href="login.html">Iniciar sesion</a>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <h2>Que hace el sistema</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <span class="etiqueta">Usuarios</span>
+          <h3>Registro de ciudadanos</h3>
+          <p class="parrafo">
+            Los ciudadanos se registran con nombre, correo y una contrasena segura.
+          </p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">Mascotas</span>
+          <h3>Registro de mascotas</h3>
+          <p class="parrafo">
+            Las mascotas son perros y gatos. El registro contiene nombre, especie y raza.
+          </p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">Servicios</span>
+          <h3>Jornadas disponibles</h3>
+          <p class="parrafo">
+            Los usuarios registrados visualizan las jornadas de vacunacion y esterilizacion
+            disponibles y envian solicitudes con una o varias de sus mascotas registradas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <h2>Como funciona</h2>
+      <div class="tarjeta">
+        <ol class="pasos">
+          <li>El ciudadano se registra en el sistema.</li>
+          <li>Ingresa con su correo y contrasena.</li>
+          <li>Registra sus mascotas (perros o gatos) con nombre, especie y raza.</li>
+          <li>Consulta las jornadas de vacunacion y esterilizacion disponibles.</li>
+          <li>Selecciona una o varias de sus mascotas y envia la solicitud de participacion.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <h2>Pantallas del software</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <h3>Registro</h3>
+          <p class="parrafo">Formulario para crear la cuenta del ciudadano.</p>
+          <a href="registro.html">Abrir pantalla</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Login</h3>
+          <p class="parrafo">Acceso con correo y contrasena segura.</p>
+          <a href="login.html">Abrir pantalla</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Perfil</h3>
+          <p class="parrafo">Datos del usuario registrado.</p>
+          <a href="perfil.html">Abrir pantalla</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Registro mascota</h3>
+          <p class="parrafo">Formulario para registrar nombre, especie y raza.</p>
+          <a href="registro-mascota.html">Abrir pantalla</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Mis mascotas</h3>
+          <p class="parrafo">Listado de las mascotas registradas del usuario.</p>
+          <a href="mis-mascotas.html">Abrir pantalla</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Servicios disponibles</h3>
+          <p class="parrafo">Jornadas de vacunacion y esterilizacion abiertas a inscripcion.</p>
+          <a href="servicios.html">Abrir pantalla</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <h2>Actores principales</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <h3>Usuarios</h3>
+          <p class="parrafo">Ciudadanos de la ciudad que usan los servicios gratuitos de la alcaldia.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Administradores</h3>
+          <p class="parrafo">Personal de la alcaldia que habilita las jornadas segun disponibilidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <h2>Alcance del proyecto</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <h3>Incluye</h3>
+          <ul class="lista">
+            <li>Aplicacion web en HTML, CSS y PHP.</li>
+            <li>Montaje en XAMPP.</li>
+            <li>Acceso a informacion persistente para identificacion y registro de usuarios.</li>
+            <li>Proyeccion de 50 usuarios activos no concurrentes.</li>
+          </ul>
+        </article>
+        <article class="tarjeta">
+          <h3>No incluye</h3>
+          <ul class="lista">
+            <li>Notificaciones.</li>
+            <li>Reportes.</li>
+            <li>Transacciones.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="aviso" style="margin-top: 18px;">
+        <strong>Proyecto de prueba tipo academico</strong>
+        Se mantiene todo simple. El sistema no envia notificaciones, no genera reportes y no realiza transacciones.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <strong>MascotasTest</strong> - Proyecto academico SENA |
+      Aplicacion web HTML, CSS y PHP para XAMPP
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | MascotasTest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <div class="marca">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MascotasTest</h1>
+          <span>Alcaldia de la ciudad</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registro.html" class="activo">Registro</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="centrado">
+    <div class="tarjeta">
+      <h2 style="border:none; padding:0; margin-bottom:6px;">Crear cuenta</h2>
+      <p class="parrafo">Registrate como ciudadano para inscribir tus mascotas en las jornadas.</p>
+
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="ciudadano@correo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="password">Contrasena</label>
+          <input type="password" id="password" name="password" placeholder="Contrasena segura" required>
+          <span class="ayuda">Debe ser una contrasena segura.</span>
+        </div>
+
+        <button type="submit" class="boton bloque">Registrarme</button>
+      </form>
+
+      <p class="enlace-centro">
+        Ya tienes cuenta? <a href="login.html">Inicia sesion</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <strong>MascotasTest</strong> - Proyecto academico SENA |
+      Aplicacion web HTML, CSS y PHP para XAMPP
+    </div>
+  </footer>
+
+</body>
+</html>

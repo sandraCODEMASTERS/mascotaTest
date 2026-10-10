@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios disponibles | MascotasTest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <div class="marca">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MascotasTest</h1>
+          <span>Alcaldia de la ciudad</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="servicios.html" class="activo">Servicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+
+      <h2>Servicios disponibles</h2>
+      <p class="parrafo">
+        Selecciona la jornada y una o varias de tus mascotas registradas para enviar
+        tu solicitud de participacion. El servicio es gratuito.
+      </p>
+
+      <div class="rejilla" style="margin-bottom:22px;">
+
+        <article class="jornada">
+          <span class="etiqueta">Vacunacion</span>
+          <h3>Jornada de vacunacion</h3>
+          <div class="datos">
+            <span>Fecha: sabado 10 de mayo</span>
+            <span>Lugar: Plaza principal</span>
+            <span>Horario: 8:00 a.m. - 12:00 m.</span>
+          </div>
+          <div class="seleccion">
+            <label class="opcion">
+              <input type="checkbox" name="mascota" value="firulais">
+              Firulais (Perro)
+            </label>
+            <label class="opcion">
+              <input type="checkbox" name="mascota" value="michi">
+              Michi (Gato)
+            </label>
+          </div>
+        </article>
+
+        <article class="jornada">
+          <span class="etiqueta">Esterilizacion</span>
+          <h3>Jornada de esterilizacion</h3>
+          <div class="datos">
+            <span>Fecha: martes 14 de mayo</span>
+            <span>Lugar: Albergue municipal</span>
+            <span>Horario: 9:00 a.m. - 3:00 p.m.</span>
+          </div>
+          <div class="seleccion">
+            <label class="opcion">
+              <input type="checkbox" name="mascota" value="firulais">
+              Firulais (Perro)
+            </label>
+            <label class="opcion">
+              <input type="checkbox" name="mascota" value="michi">
+              Michi (Gato)
+            </label>
+          </div>
+        </article>
+
+      </div>
+
+      <button type="submit" class="boton">Enviar solicitud</button>
+
+      <!--
+        Estado alterno: cuando no hay jornadas disponibles por disponibilidad de la alcaldia.
+        <div class="aviso">
+          <strong>No hay jornadas disponibles</strong>
+          La alcaldia no tiene jornadas abiertas para inscripcion en este momento.
+          Vuelve mas tarde para consultar la disponibilidad.
+        </div>
+      -->
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <strong>MascotasTest</strong> - Proyecto academico SENA |
+      Aplicacion web HTML, CSS y PHP para XAMPP
+    </div>
+  </footer>
+
+</body>
+</html>
